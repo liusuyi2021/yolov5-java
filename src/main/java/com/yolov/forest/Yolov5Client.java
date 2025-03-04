@@ -13,6 +13,6 @@ import com.dtflys.forest.annotation.Post;
  **/
 @BaseRequest(baseURL = "http://127.0.0.1:5000")
 public interface Yolov5Client {
-    @Post(value = "/detect", contentType = "text/plain")
+    @Post(value = "/detect")
     byte[] detect(@Body String url);
 }
